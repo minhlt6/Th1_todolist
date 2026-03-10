@@ -316,9 +316,29 @@ class _MainTabScreenState extends State<MainTabScreen>
   }
 
   void _deleteTodo(String id) {
-    setState(() {
-      todos.removeWhere((t) => t.id == id);
-    });
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: const Text('Xác nhận'),
+        content: const Text('Bạn có chắc muốn xóa công việc này?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Hủy'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+            onPressed: () {
+              setState(() {
+                todos.removeWhere((t) => t.id == id);
+              });
+              Navigator.pop(context);
+            },
+            child: const Text('Xóa'),
+          ),
+        ],
+      ),
+    );
   }
 
   @override
