@@ -1,0 +1,12 @@
+{
+  "appTitle": "TodoList",
+  "addTask": "Add Task",
+  "editTask": "Edit Task",
+  "deleteTask": "Delete Task",
+  "taskCompleted": "Task completed! Congratulations!",
+  "chooseBackgroundColor": "Choose background color",
+  "taskHint": "Enter your task...",
+  "descHint": "Description (optional)",
+  "confirm": "Confirm",
+  "cancel": "Cancel"
+}

@@ -1,0 +1,12 @@
+{
+  "appTitle": "Danh sách công việc",
+  "addTask": "Thêm công việc",
+  "editTask": "Sửa công việc",
+  "deleteTask": "Xóa công việc",
+  "taskCompleted": "Hoàn thành công việc! Chúc mừng bạn!",
+  "chooseBackgroundColor": "Chọn màu nền",
+  "taskHint": "Nhập công việc...",
+  "descHint": "Mô tả (không bắt buộc)",
+  "confirm": "Xác nhận",
+  "cancel": "Hủy"
+}
